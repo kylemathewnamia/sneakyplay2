@@ -1,4 +1,3 @@
-// Admin Dashboard JavaScript
 document.addEventListener('DOMContentLoaded', function () {
     console.log('SneakyPlay Admin Dashboard loaded');
 
@@ -303,4 +302,5 @@ document.addEventListener('keydown', function (e) {
             input.dispatchEvent(event);
         });
     }
+
 });
