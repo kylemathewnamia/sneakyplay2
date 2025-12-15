@@ -154,7 +154,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['bulk_action'])) {
 </head>
 
 <body class="admin-dashboard">
-    <!-- Admin Dashboard Header - Match the image -->
+    <!-- Admin Dashboard Header -->
     <nav class="admin-nav">
         <div class="admin-nav-container">
             <!-- Logo -->
@@ -163,7 +163,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['bulk_action'])) {
                 <span>SneakyPlay Admin</span>
             </div>
 
-            <!-- Navigation Menu - Fixed order and icons -->
+            <!-- Navigation Menu -->
             <div class="admin-nav-menu">
                 <a href="admin.php" class="nav-link">
                     <i class="fas fa-tachometer-alt"></i>
@@ -185,7 +185,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['bulk_action'])) {
 
             </div>
 
-            <!-- User & Logout - Exactly like the image -->
+            <!-- User & Logout -->
             <div class="admin-user">
                 <div class="user-circle">
                     <span class="user-initial"><?php echo strtoupper(substr($admin_name, 0, 1)); ?></span>
@@ -198,7 +198,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['bulk_action'])) {
         </div>
     </nav>
 
-    <!-- Main Content - Using same structure as other admin pages -->
+    <!-- Main Content -->
     <main class="admin-main">
         <div class="admin-container">
             <!-- Dashboard Header -->
@@ -223,7 +223,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['bulk_action'])) {
                 </div>
             <?php endif; ?>
 
-            <!-- Statistics Cards - Updated to match admin.css styling -->
+            <!-- Statistics Cards -->
             <div class="stats-grid">
                 <div class="stat-card">
                     <div class="stat-icon users">
@@ -445,7 +445,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['bulk_action'])) {
         </div>
     </main>
 
-    <!-- Footer - Optional, add if you want it -->
+    <!-- Footer - Optional -->
     <footer class="shop-footer" style="margin-top: 3rem;">
         <div class="container">
             <p>&copy; <?php echo date('Y'); ?> SneakyPlay Gaming Store. All rights reserved.</p>
@@ -486,5 +486,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['bulk_action'])) {
         });
     </script>
 </body>
+
 
 </html>
