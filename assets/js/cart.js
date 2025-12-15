@@ -1,5 +1,4 @@
-// cart.js - Fixed Quantity Controls
-document.addEventListener('DOMContentLoaded', function () {
+    document.addEventListener('DOMContentLoaded', function () {
     console.log('Cart page loaded successfully!');
 
     // ====== QUANTITY CONTROLS - FIXED ======
@@ -289,4 +288,5 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         }, 5000);
     }
+
 });
