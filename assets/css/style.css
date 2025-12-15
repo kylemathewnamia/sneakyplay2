@@ -1,4 +1,3 @@
-/* Reset and Base Styles */
 * {
     margin: 0;
     padding: 0;
@@ -515,5 +514,6 @@ body {
     .footer {
         padding: 3rem 5% 1rem;
     }
+
 
 }
