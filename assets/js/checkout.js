@@ -1,4 +1,3 @@
-// checkout.js - Simple & Working
 document.addEventListener('DOMContentLoaded', function () {
     console.log('Checkout page loaded successfully!');
 
@@ -70,4 +69,5 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         });
     }
+
 });
