@@ -47,7 +47,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $user = $stmt->fetch();
 
         if ($user && password_verify($password, $user['password'])) {
-            // Password is correct, start session - FIXED: Changed $user['id'] to $user['user_id']
+            // Password is correct, start session 
             $_SESSION['user_id'] = $user['user_id']; // This was line 46
             $_SESSION['user_name'] = $user['name'];
             $_SESSION['user_email'] = $user['email'];
@@ -57,7 +57,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 setcookie('remember_email', $email, time() + (86400 * 30), "/"); // 30 days
             }
 
-            // Redirect to USER DASHBOARD (not root index.php)
+            // Redirect to USER DASHBOARD 
             header("Location:user/index.php");
             exit();
         } else {
@@ -69,7 +69,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $_SESSION['login_errors'] = $errors;
 }
 
-// Check if user is already logged in - REDIRECT TO USER DASHBOARD
+// Check if user is already logged in 
 if (isset($_SESSION['user_id'])) {
     header("Location: user/index.php");
     exit();
@@ -240,5 +240,6 @@ $remembered_email = isset($_COOKIE['remember_email']) ? $_COOKIE['remember_email
         }
     </script>
 </body>
+
 
 </html>
