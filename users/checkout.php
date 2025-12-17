@@ -53,7 +53,7 @@ foreach ($product_images as $img) {
 foreach ($cart_summary['cart_items'] as &$item) {
     $image_filename = $image_lookup[$item['product_id']] ?? null;
     $item['image_src'] = !empty($image_filename)
-        ? '/sneakyplay2/assets/image/' . htmlspecialchars($image_filename)
+        ? '../assets/image/' . htmlspecialchars($image_filename)
         : 'https://picsum.photos/seed/product' . $item['product_id'] . '/100/100.jpg';
 }
 
@@ -171,8 +171,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Checkout - SneakyPlay</title>
-    <link rel="stylesheet" href="/sneakyplay2/assets/css/user_dashboard.css">
-    <link rel="stylesheet" href="/sneakyplay2/assets/css/checkout.css">
+    <link rel="stylesheet" href="../assets/css/user_dashboard.css">
+    <link rel="stylesheet" href="../assets/css/checkout.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="icon" type="image/png" href="../assets/image/logo.png">
     <style>
@@ -471,7 +471,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <p>&copy; <?php echo date('Y'); ?> SneakyPlay. All rights reserved.</p>
     </footer>
 
-    <script src="/sneakyplay2/assets/js/user_dashboard.js"></script>
+    <script src="../assets/js/user_dashboard.js"></script>
     <script>
         // Close message notification
         document.addEventListener('DOMContentLoaded', function() {

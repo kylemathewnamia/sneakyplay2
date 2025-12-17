@@ -80,7 +80,7 @@ $special_offers = $offers_stmt->fetchAll(PDO::FETCH_ASSOC);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gamer Dashboard - SneakyPlay</title>
-    <link rel="stylesheet" href="/sneakyplay2/assets/css/user_dashboard.css">
+    <link rel="stylesheet" href="../assets/css/user_dashboard.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="icon" type="image/png" href="../assets/image/logo.png">
 </head>
@@ -218,7 +218,7 @@ $special_offers = $offers_stmt->fetchAll(PDO::FETCH_ASSOC);
                             <i class="fas fa-shopping-bag"></i>
                             <h3>No orders yet</h3>
                             <p>Start shopping to see your orders here</p>
-                            <a href="/sneakyplay2/user/shop.php" class="btn btn-primary">Browse Products</a>
+                            <a href="../user/shop.php" class="btn btn-primary">Browse Products</a>
                         </div>
                     <?php endif; ?>
                 </div>
@@ -231,7 +231,7 @@ $special_offers = $offers_stmt->fetchAll(PDO::FETCH_ASSOC);
                         <?php foreach ($popular_products as $product): ?>
                             <div class="product-card">
                                 <div class="product-image">
-                                    <img src="/sneakyplay2/assets/image/<?php echo htmlspecialchars($product['image']); ?>"
+                                    <img src="../assets/image/<?php echo htmlspecialchars($product['image']); ?>"
                                         alt="<?php echo htmlspecialchars($product['product_name']); ?>"
                                         onerror="this.onerror=null; this.src='https://picsum.photos/seed/product<?php echo $product['product_id']; ?>/200/150.jpg';">
                                 </div>
@@ -272,7 +272,7 @@ $special_offers = $offers_stmt->fetchAll(PDO::FETCH_ASSOC);
                                     <div class="offer-badge">Popular</div>
                                 <?php endif; ?>
 
-                                <img src="/sneakyplay2/assets/image/<?php echo htmlspecialchars($offer['image']); ?>"
+                                <img src="../assets/image/<?php echo htmlspecialchars($offer['image']); ?>"
                                     alt="<?php echo htmlspecialchars($offer['product_name']); ?>"
                                     onerror="this.onerror=null; this.src='https://picsum.photos/seed/offer<?php echo $offer['product_id']; ?>/200/150.jpg';">
                                 <h3><?php echo htmlspecialchars($offer['product_name']); ?></h3>
@@ -306,7 +306,7 @@ $special_offers = $offers_stmt->fetchAll(PDO::FETCH_ASSOC);
         <p>&copy; <?php echo date('Y'); ?> SneakyPlay. All rights reserved.</p>
     </footer>
 
-    <script src="/sneakyplay2/assets/js/user_dashboard.js"></script>
+    <script src="../assets/js/user_dashboard.js"></script>
 </body>
 
 </html>

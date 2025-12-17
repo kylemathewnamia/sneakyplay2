@@ -170,7 +170,7 @@ ob_start();
                         $formatted_price = "₱" . number_format($product['price'], 2);
 
                         // Get image URL - CHANGED THIS PART
-                        $image_src = '/sneakyplay2/assets/image/' . htmlspecialchars($product['image']);
+                        $image_src = '../assets/image/' . htmlspecialchars($product['image']);
 
                         echo '
                         <div class="product-card" data-category="' . $product['categories_id'] . '">

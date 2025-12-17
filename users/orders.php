@@ -109,8 +109,8 @@ $paginated_orders = array_slice($all_orders, $start_index, $orders_per_page);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Orders - SneakyPlay</title>
-    <link rel="stylesheet" href="/sneakyplay2/assets/css/user_dashboard.css">
-    <link rel="stylesheet" href="/sneakyplay2/assets/css/orders.css">
+    <link rel="stylesheet" href="../assets/css/user_dashboard.css">
+    <link rel="stylesheet" href="../assets/css/orders.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="icon" type="image/png" href="../assets/image/logo.png">
 </head>
@@ -375,7 +375,7 @@ $paginated_orders = array_slice($all_orders, $start_index, $orders_per_page);
         <p>&copy; <?php echo date('Y'); ?> SneakyPlay. All rights reserved.</p>
     </footer>
 
-    <script src="/sneakyplay2/assets/js/orders.js"></script>
+    <script src="../assets/js/orders.js"></script>
 </body>
 
 </html>

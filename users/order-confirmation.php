@@ -79,8 +79,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['cancel_order'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Order Confirmation - SneakyPlay</title>
-    <link rel="stylesheet" href="/sneakyplay2/assets/css/user_dashboard.css">
-    <link rel="stylesheet" href="/sneakyplay2/assets/css/order-confirmation.css">
+    <link rel="stylesheet" href="../assets/css/user_dashboard.css">
+    <link rel="stylesheet" href="../assets/css/order-confirmation.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="icon" type="image/png" href="../assets/image/logo.png">
 </head>
@@ -163,7 +163,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['cancel_order'])) {
                     <?php foreach ($order_items as $item):
                         // Build the correct image path like in checkout.php
                         $image_src = !empty($item['image'])
-                            ? '/sneakyplay2/assets/image/' . htmlspecialchars($item['image'])
+                            ? '../assets/image/' . htmlspecialchars($item['image'])
                             : 'https://picsum.photos/seed/product' . $item['product_id'] . '/120/120.jpg';
                     ?>
                         <div class="order-item-card">
@@ -245,8 +245,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['cancel_order'])) {
         <p>&copy; <?php echo date('Y'); ?> SneakyPlay. All rights reserved.</p>
     </footer>
 
-    <script src="/sneakyplay2/assets/js/user_dashboard.js"></script>
-    <script src="/sneakyplay2/assets/js/order-confirmation.js"></script>
+    <script src="../assets/js/user_dashboard.js"></script>
+    <script src="../assets/js/order-confirmation.js"></script>
 </body>
 
 </html>

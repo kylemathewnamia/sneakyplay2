@@ -129,8 +129,8 @@ unset($_SESSION['cart_message']);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Cart - SneakyPlay</title>
-    <link rel="stylesheet" href="/sneakyplay2/assets/css/user_dashboard.css">
-    <link rel="stylesheet" href="/sneakyplay2/assets/css/cart.css">
+    <link rel="stylesheet" href="../assets/css/user_dashboard.css">
+    <link rel="stylesheet" href="../assets/css/cart.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="icon" type="image/png" href="../assets/image/logo.png">
 </head>
@@ -205,7 +205,7 @@ unset($_SESSION['cart_message']);
                         <?php foreach ($cart_items as $item):
                             // Get image URL - CORRECT PATH
                             $image_src = !empty($item['image']) ?
-                                '/sneakyplay2/assets/image/' . htmlspecialchars($item['image']) :
+                                '../assets/image/' . htmlspecialchars($item['image']) :
                                 'https://picsum.photos/seed/product' . $item['product_id'] . '/300/200.jpg';
                         ?>
                             <div class="cart-item-card" data-item-id="<?php echo $item['cart_item_id']; ?>">
@@ -276,7 +276,7 @@ unset($_SESSION['cart_message']);
                             <h2>Your cart is empty</h2>
                             <p>Looks like you haven't added any items to your cart yet.</p>
                             <div class="empty-cart-actions">
-                                <a href="/sneakyplay2/user/shop.php" class="btn btn-primary btn-lg">
+                                <a href="../user/shop.php" class="btn btn-primary btn-lg">
                                     <i class="fas fa-gamepad"></i> Browse Products
                                 </a>
                                 <a href="index.php" class="btn btn-secondary">
@@ -312,7 +312,7 @@ unset($_SESSION['cart_message']);
 
                     <div class="cart-actions-bottom">
                         <div class="cart-continue-shopping">
-                            <a href="/sneakyplay2/user/shop.php" class="btn btn-secondary">
+                            <a href="../user/shop.php" class="btn btn-secondary">
                                 <i class="fas fa-arrow-left"></i> Continue Shopping
                             </a>
                         </div>
@@ -341,7 +341,7 @@ unset($_SESSION['cart_message']);
         <p>&copy; <?php echo date('Y'); ?> SneakyPlay. All rights reserved.</p>
     </footer>
 
-    <script src="/sneakyplay2/assets/js/user_dashboard.js"></script>
+    <script src="../assets/js/user_dashboard.js"></script>
     <script>
         // Cart quantity update function
         function updateQuantity(button, change) {
