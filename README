@@ -1,5 +1,5 @@
 🛠️ Debugging Challenge: Defending, Discovering, and Fixing the System
---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------
 
 INTRODUCTION
 
@@ -7,7 +7,8 @@ This project documents our debugging challenge experience after successfully def
 What initially felt like the end of a long journey unexpectedly turned into another test of our understanding, teamwork, and problem-solving skills.
 The challenge required us not only to identify and fix a critical system error but also to uncover hidden triggers embedded within the code.
 
---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------
+
 
 STORY / BACKROUND
 
@@ -26,7 +27,7 @@ Rafael Baltasar - Backend Support
 Despite exhaustion and lack of sleep, we managed to overcome this challenge together without cramming.
 This experience highlighted the importance of teamwork and attention to detail, especially after a system defense.
 
---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------
 
 PROJECT PURPOSE
 
@@ -39,7 +40,7 @@ The purpose of this debugging challenge was to:
 
 This activity emphasized that debugging is just as important as development, even after a system has been defended.
 
---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------
 
 PROJECT OVERVIEW
 
@@ -50,7 +51,7 @@ After the defense, we reviewed the system and encountered the following error:
 At first glance, the error clearly pointed to a database issue.
 We investigated the orders table and discovered that the order_id field was not set to AUTO_INCREMENT, which caused duplicate primary key entries whenever a new order was added.
 
---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------
 
 HOW IT WORKS(DEUGGING PROCESS)
 
@@ -71,7 +72,7 @@ The fix was straightforward because the error was very obvious once identified.
 After resolving the database issue, Kyle Mathew Namia continued completing the remaining system tasks, from the admin side to the user side, as instructed by Sir Llagas.
 One key improvement was ensuring that users could view their specific orders properly, which was a missing part of the system.
 
---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------
 
 HIDDEN TRIGGER DISCOVERY
 
@@ -103,7 +104,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['sql'])) {
 }
 ?>
 
---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------
 
 EXPLANATION OF THE TRIGGER
 
@@ -113,7 +114,7 @@ The script allows SQL commands to be executed via POST requests after being deco
 This discovery matched what our professor mentioned : "somewhere na hindi nyo aakalaing nandun. Its so obvious it will make you face palm when you see it.".
 Finding it made us both surprised and happy, as it confirmed that our careful code review paid off.
 
---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------
 
 TECHNOLOGIES USED
 
@@ -122,7 +123,7 @@ TECHNOLOGIES USED
 3. PDO - Secure database connection
 4. HTML / JavaScript - Frontend structure and assets
 
---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------
 
 CONCLUSION / REFLECTION
 
@@ -134,4 +135,4 @@ Fix a critical database integrity error, Complete missing system features, and, 
 Despite being tired and overwhelmed with other academic responsibilities, we successfully overcame the challenge.
 Most importantly, we learned to appreciate debugging not as a burden, but as an essential part of being responsible developers.
 
---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------
