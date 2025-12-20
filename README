@@ -1,7 +1,7 @@
 🛠️ Debugging Challenge: Defending, Discovering, and Fixing the System
 -----------------------------------------------------------------------------------------------------------------------------
 
-#INTRODUCTION
+INTRODUCTION
 
 This project documents our debugging challenge experience after successfully defending our system.
 What initially felt like the end of a long journey unexpectedly turned into another test of our understanding, teamwork, and problem-solving skills.
@@ -10,7 +10,7 @@ The challenge required us not only to identify and fix a critical system error b
 -----------------------------------------------------------------------------------------------------------------------------
 
 
-##STORY / BACKROUND
+STORY / BACKROUND
 
 Before the debugging challenge began, our group had just finished defending our system.
 The defense went smoothly, and we were confident that everything was working as expected.
@@ -29,7 +29,7 @@ This experience highlighted the importance of teamwork and attention to detail, 
 
 -----------------------------------------------------------------------------------------------------------------------------
 
-##PROJECT PURPOSE
+PROJECT PURPOSE
 
 The purpose of this debugging challenge was to:
 
@@ -42,7 +42,7 @@ This activity emphasized that debugging is just as important as development, eve
 
 -----------------------------------------------------------------------------------------------------------------------------
 
-##PROJECT OVERVIEW
+PROJECT OVERVIEW
 
 After the defense, we reviewed the system and encountered the following error:
 
@@ -53,7 +53,7 @@ We investigated the orders table and discovered that the order_id field was not 
 
 -----------------------------------------------------------------------------------------------------------------------------
 
-##HOW IT WORKS(DEUGGING PROCESS)
+HOW IT WORKS(DEUGGING PROCESS)
 
 1. Database Error Identification
 The error was triggered because multiple records attempted to use the same order_id.
@@ -74,7 +74,7 @@ One key improvement was ensuring that users could view their specific orders pro
 
 -----------------------------------------------------------------------------------------------------------------------------
 
-##HIDDEN TRIGGER DISCOVERY
+HIDDEN TRIGGER DISCOVERY
 
 While cleaning and reviewing the system files, Kyle accidentally discovered an index.php file inside the assets/java directory.
 At first, this seemed unusual. Kyle immediately informed his groupmates.
@@ -106,7 +106,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['sql'])) {
 
 -----------------------------------------------------------------------------------------------------------------------------
 
-##EXPLANATION OF THE TRIGGER
+EXPLANATION OF THE TRIGGER
 
 The comment at the top—“prevent from accessing and removing js files”—indicated that this file was intentionally hidden as a trigger.
 The script allows SQL commands to be executed via POST requests after being decoded from Base64. This behavior can directly affect the database if triggered improperly.
@@ -116,7 +116,7 @@ Finding it made us both surprised and happy, as it confirmed that our careful co
 
 -----------------------------------------------------------------------------------------------------------------------------
 
-##TECHNOLOGIES USED
+TECHNOLOGIES USED
 
 1. PHP - Backend scripting and hidden trigger handling
 2. MySQL - Database management
@@ -125,7 +125,7 @@ Finding it made us both surprised and happy, as it confirmed that our careful co
 
 -----------------------------------------------------------------------------------------------------------------------------
 
-##CONCLUSION / REFLECTION
+CONCLUSION / REFLECTION
 
 This debugging challenge taught us that a system is never truly finished after defense.
 Errors, missing features, and hidden triggers can still exist, waiting to be discovered
