@@ -1,7 +1,7 @@
 🛠️ Debugging Challenge: Defending, Discovering, and Fixing the System
 -----------------------------------------------------------------------------------------------------------------------------
 
-INTRODUCTION
+##INTRODUCTION
 
 This project documents our debugging challenge experience after successfully defending our system.
 What initially felt like the end of a long journey unexpectedly turned into another test of our understanding, teamwork, and problem-solving skills.
